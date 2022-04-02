@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: test
+# Project: TEST
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/dinle/Code/Assignments/2022-1/DS/test/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/dinle/Code/Assignments/2022-1/DS/TEST/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\dinle\Code\Assignments\2022-1\DS\test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\dinle\Code\Assignments\2022-1\DS\test -BC:\Users\dinle\Code\Assignments\2022-1\DS\test\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\dinle\Code\Assignments\2022-1\DS\TEST\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\dinle\Code\Assignments\2022-1\DS\TEST -BC:\Users\dinle\Code\Assignments\2022-1\DS\TEST\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -53,48 +53,47 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target test
+# Object build statements for EXECUTABLE target TEST
 
 
 #############################################
-# Order-only phony target for test
+# Order-only phony target for TEST
 
-build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
+build cmake_object_order_depends_target_TEST: phony || CMakeFiles/TEST.dir
 
-build CMakeFiles/test.dir/test.cpp.obj: CXX_COMPILER__test_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/test/test.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\test.cpp.obj.d
+build CMakeFiles/TEST.dir/main.cpp.obj: CXX_COMPILER__TEST_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/TEST/main.cpp || cmake_object_order_depends_target_TEST
+  DEP_FILE = CMakeFiles\TEST.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/dinle/Code/Assignments/2022-1/DS/test/.
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
+  OBJECT_DIR = CMakeFiles\TEST.dir
+  OBJECT_FILE_DIR = CMakeFiles\TEST.dir
+  TARGET_COMPILE_PDB = CMakeFiles\TEST.dir\
+  TARGET_PDB = TEST.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target test
+# Link build statements for EXECUTABLE target TEST
 
 
 #############################################
-# Link the executable test.exe
+# Link the executable TEST.exe
 
-build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cpp.obj
+build TEST.exe: CXX_EXECUTABLE_LINKER__TEST_Debug CMakeFiles/TEST.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\TEST.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_FILE = test.exe
-  TARGET_IMPLIB = libtest.dll.a
-  TARGET_PDB = test.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\TEST.dir\
+  TARGET_FILE = TEST.exe
+  TARGET_IMPLIB = libTEST.dll.a
+  TARGET_PDB = TEST.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\dinle\Code\Assignments\2022-1\DS\test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\dinle\Code\Assignments\2022-1\DS\TEST\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -103,7 +102,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # =============================================================================
 # Target aliases.
 
-build test: phony test.exe
+build TEST: phony TEST.exe
 
 # =============================================================================
 # Folder targets.
@@ -111,9 +110,9 @@ build test: phony test.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/dinle/Code/Assignments/2022-1/DS/test/cmake-build-debug
+# Folder: C:/Users/dinle/Code/Assignments/2022-1/DS/TEST/cmake-build-debug
 
-build all: phony test.exe
+build all: phony TEST.exe
 
 # =============================================================================
 # Built-in targets

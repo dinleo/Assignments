@@ -1,3 +1,3 @@
-C:/Users/dinle/Code/Assignments/2022-1/DS/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/dinle/Code/Assignments/2022-1/DS/test/cmake-build-debug/CMakeFiles/test.dir
-C:/Users/dinle/Code/Assignments/2022-1/DS/test/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dinle/Code/Assignments/2022-1/DS/TEST/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/dinle/Code/Assignments/2022-1/DS/TEST/cmake-build-debug/CMakeFiles/TEST.dir
+C:/Users/dinle/Code/Assignments/2022-1/DS/TEST/cmake-build-debug/CMakeFiles/edit_cache.dir

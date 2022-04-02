@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(test)
+project(TEST)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
-
-add_executable(test
-        test.cpp
-        test.h)
+add_executable(TEST main.cpp)
