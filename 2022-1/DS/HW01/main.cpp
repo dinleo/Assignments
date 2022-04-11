@@ -49,11 +49,21 @@ int main()
     h = f - g;
     h.Print();
 
+    std::cout << "f * g = ";
+    h = f * g;
+    h.Print();
+
     // Equal test
     if(f == g)
         std::cout << "f and g are same" << std::endl;
     else
         std::cout << "f and g are different" << std::endl;
+
+    h = g;
+    if(h == g)
+        std::cout << "h and g are same" << std::endl;
+    else
+        std::cout << "h and g are different" << std::endl;
 
     // Eval test
     std::cout << "f(3.5) is " << f.Eval(3.5) << std::endl;
