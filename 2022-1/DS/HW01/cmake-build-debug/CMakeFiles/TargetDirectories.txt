@@ -1,3 +1,0 @@
-C:/Users/dinle/Code/Assignments/2022-1/DS/HW01/cmake-build-debug/CMakeFiles/HW01.dir
-C:/Users/dinle/Code/Assignments/2022-1/DS/HW01/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dinle/Code/Assignments/2022-1/DS/HW01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
