@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: HW2
+# Project: HW02
 # Configurations: Debug
 # =============================================================================
 
@@ -41,43 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/dinle/Code/Assignments/2022-1/DS/HW02/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target HW2
+# Object build statements for EXECUTABLE target HW02
 
 
 #############################################
-# Order-only phony target for HW2
+# Order-only phony target for HW02
 
-build cmake_object_order_depends_target_HW2: phony || CMakeFiles/HW2.dir
+build cmake_object_order_depends_target_HW02: phony || CMakeFiles/HW02.dir
 
-build CMakeFiles/HW2.dir/main.cpp.obj: CXX_COMPILER__HW2_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/HW02/main.cpp || cmake_object_order_depends_target_HW2
-  DEP_FILE = CMakeFiles\HW2.dir\main.cpp.obj.d
+build CMakeFiles/HW02.dir/main.cpp.obj: CXX_COMPILER__HW02_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/HW02/main.cpp || cmake_object_order_depends_target_HW02
+  DEP_FILE = CMakeFiles\HW02.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\HW2.dir
-  OBJECT_FILE_DIR = CMakeFiles\HW2.dir
+  OBJECT_DIR = CMakeFiles\HW02.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW02.dir
 
-build CMakeFiles/HW2.dir/texteditor.cpp.obj: CXX_COMPILER__HW2_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/HW02/texteditor.cpp || cmake_object_order_depends_target_HW2
-  DEP_FILE = CMakeFiles\HW2.dir\texteditor.cpp.obj.d
+build CMakeFiles/HW02.dir/texteditor.cpp.obj: CXX_COMPILER__HW02_Debug C$:/Users/dinle/Code/Assignments/2022-1/DS/HW02/texteditor.cpp || cmake_object_order_depends_target_HW02
+  DEP_FILE = CMakeFiles\HW02.dir\texteditor.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\HW2.dir
-  OBJECT_FILE_DIR = CMakeFiles\HW2.dir
+  OBJECT_DIR = CMakeFiles\HW02.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW02.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target HW2
+# Link build statements for EXECUTABLE target HW02
 
 
 #############################################
-# Link the executable HW2.exe
+# Link the executable HW02.exe
 
-build HW2.exe: CXX_EXECUTABLE_LINKER__HW2_Debug CMakeFiles/HW2.dir/main.cpp.obj CMakeFiles/HW2.dir/texteditor.cpp.obj
+build HW02.exe: CXX_EXECUTABLE_LINKER__HW02_Debug CMakeFiles/HW02.dir/main.cpp.obj CMakeFiles/HW02.dir/texteditor.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\HW2.dir
+  OBJECT_DIR = CMakeFiles\HW02.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = HW2.exe
-  TARGET_IMPLIB = libHW2.dll.a
-  TARGET_PDB = HW2.exe.dbg
+  TARGET_FILE = HW02.exe
+  TARGET_IMPLIB = libHW02.dll.a
+  TARGET_PDB = HW02.exe.dbg
 
 
 #############################################
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build HW2: phony HW2.exe
+build HW02: phony HW02.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +115,7 @@ build HW2: phony HW2.exe
 #############################################
 # Folder: C:/Users/dinle/Code/Assignments/2022-1/DS/HW02/cmake-build-debug
 
-build all: phony HW2.exe
+build all: phony HW02.exe
 
 # =============================================================================
 # Built-in targets

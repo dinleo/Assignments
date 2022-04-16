@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "HW2.exe"
+			"path" : "HW02.exe"
 		},
 		{
-			"path" : "HW2.pdb"
+			"path" : "HW02.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "HW2::@6890427a1f51a3e7e1df",
+	"id" : "HW02::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -80,8 +80,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "HW2",
-	"nameOnDisk" : "HW2.exe",
+	"name" : "HW02",
+	"nameOnDisk" : "HW02.exe",
 	"paths" : 
 	{
 		"build" : ".",

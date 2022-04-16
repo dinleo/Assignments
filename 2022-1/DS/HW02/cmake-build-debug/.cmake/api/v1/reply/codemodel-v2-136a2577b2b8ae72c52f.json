@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "HW2",
+					"name" : "HW02",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "HW2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HW2-Debug-e158d5e6a6521d97fe49.json",
-					"name" : "HW2",
+					"id" : "HW02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HW02-Debug-5f91b5f89a6149d82fc0.json",
+					"name" : "HW02",
 					"projectIndex" : 0
 				}
 			]
