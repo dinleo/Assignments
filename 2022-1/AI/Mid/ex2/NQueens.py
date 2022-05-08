@@ -171,7 +171,7 @@ class NQueens:
         column."""
         randCol = random.randrange(0, self.n)
         opts = self._moveOpts(randCol)
-        randDir = random.choice(opts)   
+        randDir = random.choice(opts)
         return self.makeMove(randCol, randDir)
     
      
