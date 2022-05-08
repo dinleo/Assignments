@@ -6,6 +6,7 @@ def testRandomStarts(alg, reps, sizeList):
     Takes in a function name for one of the local search functions.
     It also has optional inputs for a number of repetitions and list
     of sizes to test. It runs reps tests for each size, and prints the results."""
+    performance = {}
     allResults = {}
     for siz in sizeList:
         print("testing size", siz)
@@ -25,10 +26,17 @@ def testRandomStarts(alg, reps, sizeList):
     for siz in sizeList:
         print("---------------")
         print("Test results for size ", siz)
+        timeArr = []
+        valArr = []
         runs = allResults[siz]
         for i in range(len(runs)):
             [lastVal, maxVal, count, deltaTime] = runs[i]
+            timeArr.append(deltaTime)
+            valArr.append(lastVal)
             print("Test ", i+1, ": value = ", lastVal, "out of", maxVal, "count = ", count, " time = {:.5f}".format(deltaTime))
+        performance[siz] = [sum(timeArr)/len(timeArr),sum(valArr)/len(valArr)]
+
+    return performance
 
 # todo:
 def testVaryingPops(alg, popSize, reps, sizeList):
@@ -37,6 +45,7 @@ def testVaryingPops(alg, popSize, reps, sizeList):
     also has an optional input a number of repetitions. This runs the given
     algorithm with the specified population size. Does
     run reps tests and prints the results."""
+    performance = {}
     allResults = {}
     for siz in sizeList:
         print("testing size", siz)
@@ -54,10 +63,16 @@ def testVaryingPops(alg, popSize, reps, sizeList):
     for siz in sizeList:
         print("---------------")
         print("Size =", siz)
+        timeArr = []
+        valArr = []
         runs = allResults[siz]
         for i in range(len(runs)):
             [lastVal, maxVal, count, deltaTime] = runs[i]
+            timeArr.append(deltaTime)
+            valArr.append(lastVal)
             print("Test", i+1, ": value =", lastVal, "out of", maxVal, "count =", count, "time = {:.5f}".format(deltaTime))
-           
+        performance[siz] = [sum(timeArr)/len(timeArr),sum(valArr)/len(valArr)]
+
+    return performance
             
 
