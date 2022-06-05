@@ -34,7 +34,7 @@ typedef Entry<int,float> Elem;
 
 template <typename E>
 class LinkedBinaryTree {
-  protected:
+  public:
 	struct Node {					// a node of the tree
       E    elt;					// element value
       Node*   par;					// parent
@@ -62,7 +62,6 @@ class LinkedBinaryTree {
         { return v->par == NULL; }
       bool isExternal() const				// an external node?
         { return v->left == NULL && v->right == NULL; }
-    
     	// additional
       bool isInternal() const
       	{ return !isExternal(); }  

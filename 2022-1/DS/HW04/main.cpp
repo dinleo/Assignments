@@ -22,6 +22,7 @@ using namespace std;
 
 int main()
 {
+    std::cout << "=========LBT=========" << std::endl;
 	typedef Entry<int, float> EntryType;
 
 	LinkedBinaryTree<EntryType> t;
@@ -31,20 +32,20 @@ int main()
 	t.addRoot();
 	
 	std::cout << "Size : " << t.size() << std::endl;
-	
-	
+
+    std::cout << "=========BST=========" << std::endl;
 	//
 	//
 	//
 	SearchTree<EntryType>	st;
 	
-	std::cout << "Size : " << st.size() << std::endl;
+	std::cout << "GEN Size : " << st.size() << std::endl;
 	st.insert(1, 2.5);
 	st.insert(3, 4.5);
 	st.insert(7, 5.5);
 	st.insert(2, 1.5);
 	st.insert(3, 8.5);
-	std::cout << "Size : " << st.size() << std::endl;
+	std::cout << "INS Size : " << st.size() << std::endl;
 
 	for(SearchTree<EntryType>::Iterator it = st.begin(); it != st.end(); ++it)
 	{
@@ -52,21 +53,31 @@ int main()
 	}
 		
 	st.erase(3);
-	std::cout << "Size : " << st.size() << std::endl;
+	std::cout << "DEL Size : " << st.size() << std::endl;
 	for(SearchTree<EntryType>::Iterator it = st.begin(); it != st.end(); ++it)
 	{
 			std::cout << (*it).key() << " , " << (*it).value() << std::endl;
-	}	
-	
-	std::cout << "------------" << std::endl;
+	}
+
+    st.insert(3,10);
+    st.insert(0,8);
+
+    std::cout << "INS2 Size : " << st.size() << std::endl;
+    for(SearchTree<EntryType>::Iterator it = st.begin(); it != st.end(); ++it)
+    {
+        std::cout << (*it).key() << " , " << (*it).value() << std::endl;
+    }
+
+    std::cout << "=========AVL=========" << std::endl;
 	
 	//
 	//
 	//
 	AVLTree<EntryType>	avl;
-	
+
+
 	// random test
-	int nElem = 100000; //100000000;
+	int nElem = 10; //100000000;
 	
 	int *key = new int[nElem*2];
 	float *val = new float[nElem*2];
@@ -80,11 +91,12 @@ int main()
 		key[i] = std::rand();
 		val[i] = (float) std::rand()/RAND_MAX * 20000;
 	}
-		
+
 
   //
   // AVL tree Insert test
-  //	
+  //
+    std::cout << "=========TEST=========" << std::endl;
 	clock_t tm;
     tm = clock();
 	for(int i=0; i<nElem; i++)
@@ -93,7 +105,8 @@ int main()
 	}
 	tm = clock() - tm;
 	printf ("It took me %f seconds.\n",((float)tm)/(float)CLOCKS_PER_SEC);
-	
+
+    std::cout << "=========TEST2=========" << std::endl;
 
   //
   // AVL tree Find test
