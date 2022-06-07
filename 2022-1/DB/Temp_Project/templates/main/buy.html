@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy</title>
+</head>
+<body>
+ITEM
+<table border="1">
+    <thead>
+    <th>code</th>
+    <th>name</th>
+    <th>price</th>
+    <th>stock</th>
+    <th>seller</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ item[0] }}</td>
+        <td>{{ item[1] }}</td>
+        <td>{{ item[2] }}</td>
+        <td>{{ item[3] }}</td>
+        <td>{{ item[4] }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="/buy_item" method="post">
+    잔고: {{ bal }}<br>
+    등급: {{ rat }}<br>
+    <label for="quantity">Quantity</label><br>
+    <input id="quantity" type="text" name="quantity" required><br>
+    <input type="hidden" name="send_id" value={{ id }}>
+    <input type="hidden" name="send_bal" value={{ bal }}>
+    <input type="hidden" name="send_rat" value={{ rat }}>
+    <input type="hidden" name="code" value={{item[0]}}>
+    <input type="hidden" name="name" value={{item[1]}}>
+    <input type="hidden" name="price" value={{item[2]}}>
+    <input type="hidden" name="stock" value={{item[3]}}>
+    <input type="hidden" name="seller" value={{item[4]}}>
+    <input type="submit" name="send" value="구매">
+</form>
+
+<form action="/buy_item" method="post">
+    <input type="hidden" name="send_id" value={{ id }}>
+    <input type="submit" name="send" value="취소">
+</form>
+
+</body>
+</html>

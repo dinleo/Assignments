@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sell</title>
+</head>
+<body>
+CATEGORY LIST
+<table border="1">
+    {% for c in category %}
+    <tr>
+        <td>{{ c[0] }}</td>
+        <td>{{ c[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h3>판매등록</h3>
+<form action="/add_sell" method="post">
+    <label for="code">Code:</label><br>
+    <input id="code" type="text" name="code" required><br>
+
+    <label for="name">Name:</label><br>
+    <input id="name" type="text" name="name" required><br>
+
+    <label for="price">Price:</label><br>
+    <input id="price" type="text" name="price" required><br>
+
+    <label for="stock">stock:</label><br>
+    <input id="stock" type="text" name="stock" required><br><br>
+
+    <input type="hidden" name="send_id" value={{ id }}><br><br>
+
+    <input type="submit" name="send" value="판매등록">
+</form>
+
+<form action="/add_sell" method="post">
+    <input type="hidden" name="send_id" value={{ id }}>
+    <input type="submit" name="send" value="취소">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>쇼핑몰</title>
+</head>
+<body>
+{% if id == "admin" %}
+<form action="/admin" method="post">
+    ======관리자메뉴======<br><br>
+    <input type="submit"name="send" value="유저정보">
+    <input type="submit" name="send" value="거래내역"><br>
+    ====================<br><br>
+</form>
+{% endif %}
+<table border="1">
+    <thead>
+    <th>인기 카테고리</th>
+    <th>Best Buyer</th>
+    <th>Best Seller</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ bc }}</td>
+        <td>{{ bb }}</td>
+        <td>{{ bs }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="/return_log" method="post">
+    유저ID: {{ id }}<br>
+    잔고: {{ bal }}<br>
+    등급: {{ rat }}<br>
+    <input type="submit" name="send" value="로그아웃">
+</form>
+
+
+<form action="/trade" method="post">
+    <input type=submit name="send" value="판매"><br>
+    <input type=hidden name="send_id" value={{ id }}><br>
+    <table border="1">
+        <thead>
+            <th>상품 번호</th>
+            <th>code</th>
+            <th>name</th>
+            <th>price</th>
+            <th>stack</th>
+            <th>seller</th>
+        </thead>
+        <tbody>
+            {% for i in range(idx) %}
+            <tr>
+                <td>{{ i+1 }}</td>
+                <td>{{ items[i][0] }}</td>
+                <td>{{ items[i][1] }}</td>
+                <td>{{ items[i][2] }}</td>
+                <td>{{ items[i][3] }}</td>
+                <td>{{ items[i][4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <label for="idx">구매할 상품 번호:</label><br>
+    <input id="idx" type="text" name="idx"><br>
+    <input type=submit name="send" value="구매"><br>
+</form>
+
+</body>
+</html>
